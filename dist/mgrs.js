@@ -754,6 +754,8 @@ var mgrs = {
 exports.latLonToMGRS = latLonToMGRS;
 exports.MGRSToLatLonBB = MGRSToLatLonBB;
 exports.MGRStoLatLonPoint = MGRStoLatLonPoint;
+exports.LLtoUTM = LLtoUTM;
+exports.UTMtoLL = UTMtoLL;
 exports['default'] = mgrs;
 
 Object.defineProperty(exports, '__esModule', { value: true });

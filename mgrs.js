@@ -103,7 +103,7 @@ function radToDeg(rad) {
  *     northing, zoneNumber and zoneLetter properties, and an optional
  *     accuracy property in digits. Returns null if the conversion failed.
  */
-function LLtoUTM(ll) {
+export function LLtoUTM(ll) {
   var Lat = ll.lat;
   var Long = ll.lon;
   var a = 6378137.0; //ellip.radius;
@@ -190,7 +190,7 @@ function LLtoUTM(ll) {
  *     for the bounding box calculated according to the provided accuracy.
  *     Returns null if the conversion failed.
  */
-function UTMtoLL(utm) {
+export function UTMtoLL(utm) {
 
   var UTMNorthing = utm.northing;
   var UTMEasting = utm.easting;
