@@ -18,12 +18,10 @@ declare module "mgrs" {
     zoneNumber: string;
   }
 
-  class Mgrs {
-    latLonToMGRS(ll: LatLon): string;
-    MGRStoLatLonPoint(mgrs: string): [number, number, number, number];
-    UTMtoLL(coordinate: UTM): LatLon;
-    LLtoUTM(coordinate: LatLon): UTM;
-  }
+  function latLonToMGRS(ll: LatLon): string;
+  function MGRStoLatLonPoint(mgrs: string): [number, number, number, number];
+  function UTMtoLL(coordinate: UTM): LatLon;
+  function LLtoUTM(coordinate: LatLon): UTM;
 
-  export default Mgrs.prototype;
+  export { LatLon, latLonToMGRS, LLtoUTM, MGRStoLatLonPoint, UTM, UTMtoLL };
 }
